@@ -71,7 +71,7 @@ function Addsession() {
      <div className="row ">
     <div className="col-12 col-md-12 w-100  secTwo">
                <h3>Session manage</h3>
-               <h6>Lebansty Valan</h6>
+               <h6>Kiruba</h6>
             </div>
     </div>
     <div className="row mt-3">

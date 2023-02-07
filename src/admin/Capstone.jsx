@@ -55,7 +55,7 @@ console.log(values)
       <div className="row">
     <div className="col-12 col-md-12 w-100  secTwo">
                <h3>Capstone</h3>
-               <h6>Lebansty Valan</h6>
+               <h6>kiruba</h6>
             </div>
     </div>
    
