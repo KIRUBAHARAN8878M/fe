@@ -11,7 +11,7 @@ function Eventedit() {
       },[])
       let selectBatches = async()=>{
         try {
-        let data= await axios.get('http://localhost:4000/give-batches',{
+        let data= await axios.get('https://zenclass-be.vercel.app/give-batches',{
           headers:{
             "auth":window.localStorage.getItem("app-token")
           }
@@ -24,7 +24,7 @@ function Eventedit() {
       let selectValue=async(e)=>{
 try {
   setSpin(true)
-    let eventManipu = await axios.get('http://localhost:4000/spec-student',{
+    let eventManipu = await axios.get('https://zenclass-be.vercel.app/spec-student',{
         headers:{
             "auth":window.localStorage.getItem("app-token"),
             "batch_id":e.target.value

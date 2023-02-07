@@ -11,7 +11,7 @@ function Stucap() {
   },[])
   let loadData =async()=>{
 try {
-  let wCode = await axios.get('http://localhost:4000/capcode-get',{
+  let wCode = await axios.get('https://zenclass-be.vercel.app/capcode-get',{
     headers:{
       userid:window.localStorage.getItem("userId")
     }

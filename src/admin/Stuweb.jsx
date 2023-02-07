@@ -13,7 +13,7 @@ function Stuweb() {
   },[])
   let loadData =async()=>{
 try {
-  let wCode = await axios.get('http://localhost:4000/webcode-get',{
+  let wCode = await axios.get('https://zenclass-be.vercel.app/webcode-get',{
     headers:{
       userid:window.localStorage.getItem("userId")
     }

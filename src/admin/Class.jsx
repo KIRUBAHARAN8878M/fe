@@ -15,7 +15,7 @@ function Class() {
 let loadAdditional =async()=>{
 try {
     
-    let addSession = await axios.get('http://localhost:4000/additional-sessiondata',{
+    let addSession = await axios.get('https://zenclass-be.vercel.app/additional-sessiondata',{
         headers:{
             batch_id:window.localStorage.getItem('batch_id')
         }

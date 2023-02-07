@@ -12,7 +12,7 @@ function Webcode() {
   },[])
   let loadData =async()=>{
 try {
-let studentData = await axios.get(`http://localhost:4000/studentdet/${param.userid}`,{
+let studentData = await axios.get(`https://zenclass-be.vercel.app/studentdet/${param.userid}`,{
   headers:{
     "auth":window.localStorage.getItem("app-token")
   }
@@ -35,7 +35,7 @@ console.log(error)
     onSubmit:async(values,{resetForm})=>{
       try {
         console.log(values)
-        let data = await axios.post(`http://localhost:4000/assign-webcode/${param.userid}`,values,{
+        let data = await axios.post(`https://zenclass-be.vercel.app/assign-webcode/${param.userid}`,values,{
           headers:{
             "auth":window.localStorage.getItem("app-token")
           }

@@ -12,7 +12,7 @@ function Student() {
   },[])
   let selectBatches = async()=>{
     try {
-    let data= await axios.get('http://localhost:4000/give-batches',{
+    let data= await axios.get('https://zenclass-be.vercel.app/give-batches',{
       headers:{
         "auth":window.localStorage.getItem("app-token")
       }

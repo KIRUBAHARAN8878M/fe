@@ -14,7 +14,7 @@ function Capstone() {
     let loadData =async()=>{
     
 try {
-  let studentData = await axios.get(`http://localhost:4000/studentdet/${param.userId}`,{
+  let studentData = await axios.get(`https://zenclass-be.vercel.app/studentdet/${param.userId}`,{
     headers:{
       "auth":window.localStorage.getItem("app-token")
     }
@@ -37,7 +37,7 @@ try {
       onSubmit:async(values,{resetForm})=>{
         try {
           console.log(values)
-          let data = await axios.post(`http://localhost:4000/assign-capstone/${param.userId}`,values,{
+          let data = await axios.post(`https://zenclass-be.vercel.app/assign-capstone/${param.userId}`,values,{
             headers:{
               "auth":window.localStorage.getItem("app-token")
             }

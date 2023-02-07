@@ -13,7 +13,7 @@ function Addsession() {
       },[])
       let selectBatches = async()=>{
         try {
-        let data= await axios.get('http://localhost:4000/give-batches',{
+        let data= await axios.get('https://zenclass-be.vercel.app/give-batches',{
           headers:{
             "auth":window.localStorage.getItem("app-token")
           }
@@ -30,7 +30,7 @@ function Addsession() {
       let obj={
         batch_id:e.target.value
       }
-          let batchStudents =await axios.post('http://localhost:4000/getiing-adddata',obj,{
+          let batchStudents =await axios.post('https://zenclass-be.vercel.app/getiing-adddata',obj,{
            
               headers:{
                 "auth":window.localStorage.getItem("app-token")
@@ -55,7 +55,7 @@ function Addsession() {
                 userid:id,
                 topic:pop.topic
               }
-             await axios.put("http://localhost:4000/remove-session",obj,{
+             await axios.put("https://zenclass-be.vercel.app/remove-session",obj,{
               headers:{
                 "auth":window.localStorage.getItem("app-token")
               }

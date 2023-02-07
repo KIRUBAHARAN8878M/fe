@@ -14,7 +14,7 @@ function Editweb() {
    
     let loadData =async()=>{
         try {
-            let data = await axios.get(`http://localhost:4000/web-correction/${param.id}`)
+            let data = await axios.get(`https://zenclass-be.vercel.app/web-correction/${param.id}`)
             setWeb(data.data.data)
         } catch (error) {
             console.log(error)
@@ -29,7 +29,7 @@ try {
       userid:param.id,
       title:pop.title
     }
-   await axios.put("http://localhost:4000/remove-web",obj,{
+   await axios.put("https://zenclass-be.vercel.app/remove-web",obj,{
     headers:{
       "auth":window.localStorage.getItem("app-token")
     }
